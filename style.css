@@ -1,0 +1,2062 @@
+
+/* THE 32ND FLOOR */
+
+:root {
+    --burgundy: #4b1725;
+    --dark-wine: #2c0d17;
+    --cream: #f7f0e7;
+    --nude: #d9c2b0;
+    --gold: #b99a69;
+    --text: #382729;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--cream);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* HEADER */
+
+header {
+    height: 85px;
+    padding: 0 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--burgundy);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.logo span {
+    display: block;
+    font-size: 8px;
+    letter-spacing: 3px;
+    margin-top: 6px;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 12px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+/* HERO */
+
+.hero {
+    min-height: 85vh;
+    background: var(--burgundy);
+    color: var(--cream);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 70px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.eyebrow {
+    color: var(--gold);
+    font-size: 10px;
+    letter-spacing: 4px;
+    font-weight: 600;
+}
+
+.hero .eyebrow {
+    margin-bottom: 45px;
+}
+
+.recipient {
+    color: var(--nude);
+    font-size: 10px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(55px, 8vw, 100px);
+    line-height: 1.05;
+    font-weight: 400;
+}
+
+.hero h1 em {
+    color: var(--nude);
+}
+
+.hero-text {
+    font-size: 13px;
+    line-height: 2;
+    color: rgba(255,255,255,.75);
+    margin-top: 25px;
+}
+
+.hero-button {
+    margin-top: 35px;
+    padding: 16px 25px;
+    border: 1px solid var(--nude);
+    color: var(--cream);
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 2px;
+    transition: .3s;
+}
+
+.hero-button:hover {
+    background: var(--cream);
+    color: var(--burgundy);
+}
+
+.hero-footer {
+    position: absolute;
+    bottom: 25px;
+    left: 7%;
+    right: 7%;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(255,255,255,.5);
+    font-size: 8px;
+    letter-spacing: 2px;
+}
+
+/* INTRODUCTION */
+
+.introduction {
+    text-align: center;
+    padding: 120px 20px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.introduction h2,
+.letter-section h2,
+.memories h2,
+.wishes h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(38px, 5vw, 62px);
+    font-weight: 400;
+    color: var(--burgundy);
+    margin-top: 25px;
+    line-height: 1.2;
+}
+
+.introduction > p:not(.eyebrow) {
+    max-width: 550px;
+    margin: 25px auto;
+    color: #806d68;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.divider {
+    width: 60px;
+    height: 1px;
+    background: var(--gold);
+    margin: 35px auto;
+}
+
+.introduction h3 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: var(--burgundy);
+    font-weight: 400;
+}
+
+/* LETTER */
+
+
+
+/* LETTER SECTION */
+
+.letter-section {
+    position: relative;
+    padding: 120px 8%;
+    text-align: center;
+    background-color: #d5c0ad;
+    background-image:
+        repeating-linear-gradient(
+            3deg,
+            transparent 0px,
+            rgba(93, 59, 43, 0.035) 2px,
+            transparent 5px,
+            transparent 13px
+        ),
+        linear-gradient(
+            135deg,
+            #e3d1bf,
+            #cbb29d,
+            #e0cbb8
+        );
+}
+
+/* THE PAPER */
+
+
+/* THE PAPER */
+
+.letter {
+    position: relative;
+    isolation: isolate;
+    overflow: visible;
+
+    width: 100%;
+    max-width: 800px;
+    margin: 85px auto 70px;
+    padding: 95px 75px 110px;
+
+    text-align: left;
+
+    
+background-color: #ead8b9;
+
+background-image:
+    /* Aged corners */
+    radial-gradient(
+        ellipse at 0% 0%,
+        rgba(126, 76, 39, .22),
+        transparent 32%
+    ),
+    radial-gradient(
+        ellipse at 100% 0%,
+        rgba(126, 76, 39, .16),
+        transparent 30%
+    ),
+    radial-gradient(
+        ellipse at 0% 100%,
+        rgba(126, 76, 39, .18),
+        transparent 32%
+    ),
+    radial-gradient(
+        ellipse at 100% 100%,
+        rgba(126, 76, 39, .22),
+        transparent 30%
+    ),
+
+    /* Soft natural paper variation */
+    radial-gradient(
+        ellipse at 50% 45%,
+        rgba(255, 250, 235, .65),
+        transparent 75%
+    ),
+
+    /* Fine paper grain effect */
+    repeating-linear-gradient(
+        0deg,
+        rgba(111, 78, 55, .025) 0px,
+        transparent 1px,
+        transparent 3px
+    ),
+
+    repeating-linear-gradient(
+        90deg,
+        rgba(111, 78, 55, .018) 0px,
+        transparent 1px,
+        transparent 4px
+    ),
+
+    /* Base parchment colour */
+    linear-gradient(
+        135deg,
+        #f5e8d0,
+        #e8d4b5 50%,
+        #f2e3c9
+    );
+
+border: 1px solid #c9ad87;
+border-radius: 3px 5px 4px 2px;
+
+box-shadow:
+    0 30px 60px rgba(39, 20, 23, .24),
+    0 8px 18px rgba(39, 20, 23, .12),
+    inset 0 0 35px rgba(126, 76, 39, .12),
+    inset 0 0 8px rgba(126, 76, 39, .08);
+
+}
+
+/* PAPER EDGE DETAIL */
+
+
+.letter::before {
+    content: "";
+    position: absolute;
+    inset: 12px;
+
+    border: 1px solid rgba(153, 112, 72, .25);
+
+    pointer-events: none;
+    z-index: 0;
+}
+
+
+/* KEEP LETTER CONTENT ABOVE PAPER DETAIL */
+
+.letter > *:not(.fountain-pen-image) {
+    position: relative;
+    z-index: 1;
+}
+
+/* BURGUNDY WAX SEAL */
+
+.letter::after {
+    content: "K";
+    position: absolute;
+    right: 35px;
+    bottom: 30px;
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: radial-gradient(
+        circle at 32% 25%,
+        #a65365,
+        #711f35 55%,
+        #3c101e
+    );
+
+    color: #e8c994;
+    border: 2px solid #bd9863;
+    border-radius: 50%;
+
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    font-style: italic;
+
+    box-shadow:
+        0 5px 10px rgba(0,0,0,.2),
+        inset 0 2px 5px rgba(255,255,255,.15);
+
+    z-index: 2;
+}
+
+/* FOUNTAIN PEN */
+
+
+.fountain-pen-image {
+    position: absolute;
+
+    width: 240px;
+    height: auto;
+
+    top: -75px;
+    right: 5px;
+
+    transform: rotate(32deg);
+    transform-origin: center;
+
+    z-index: 3;
+    pointer-events: none;
+
+    filter:
+        drop-shadow(4px 8px 5px rgba(45, 25, 20, .28))
+        drop-shadow(1px 2px 2px rgba(45, 25, 20, .15));
+}
+
+
+/* LETTER TYPOGRAPHY */
+
+
+/* LETTER TYPOGRAPHY */
+
+.letter-date {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 9px;
+    color: #98764e;
+    letter-spacing: 3px;
+    border-bottom: 1px solid rgba(139, 105, 69, .35);
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.letter h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    color: var(--burgundy);
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.letter p {
+    font-family: 'Caveat', cursive;
+    font-size: 24px;
+    line-height: 1.7;
+    color: #514143;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.letter strong {
+    color: var(--burgundy);
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.letter .closing-words {
+    font-style: italic;
+    margin-top: 35px;
+}
+
+.letter .sign-off {
+    margin-top: 35px;
+    font-size: 20px;
+    line-height: 1.8;
+    color: var(--burgundy);
+}
+
+
+.letter strong {
+    color: var(--burgundy);
+    letter-spacing: 1px;
+}
+
+.letter .personal-note {
+    background: #f4ece3;
+    padding: 15px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.letter .closing-words {
+    font-style: italic;
+    margin-top: 35px;
+}
+
+.letter .sign-off {
+    margin-top: 40px;
+    font-size: 19px;
+    line-height: 1.8;
+    color: var(--burgundy);
+}
+
+/* VOICE MESSAGE */
+
+.voice-section {
+    max-width: 750px;
+    margin: 25px auto 0;
+    padding: 25px;
+    border: 1px solid rgba(75,23,37,.2);
+}
+
+.voice-section h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--burgundy);
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.voice-section p {
+    font-size: 12px;
+    margin: 10px 0 18px;
+    color: #806d68;
+}
+
+.voice-section audio {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* MEMORIES */
+
+.memories {
+    padding: 110px 8%;
+    text-align: center;
+    background: #fffaf3;
+}
+
+.memory-intro {
+    color: #806d68;
+    font-size: 13px;
+    margin: 20px 0 45px;
+}
+
+.memory-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1050px;
+    margin: auto;
+}
+
+.memory-card {
+    text-align: left;
+}
+
+.photo-placeholder {
+    aspect-ratio: 4 / 5;
+    background: linear-gradient(145deg, #e8d9ca, #d3b9a8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--burgundy);
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.memory-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--burgundy);
+    font-weight: 400;
+    font-size: 19px;
+    margin-top: 17px;
+}
+
+.memory-card p {
+    color: #806d68;
+    font-size: 11px;
+    margin-top: 8px;
+}
+
+/* WISHES */
+
+.wishes {
+    background: var(--dark-wine);
+    color: var(--cream);
+    padding: 110px 8%;
+    text-align: center;
+}
+
+.wishes h2 {
+    color: var(--cream);
+}
+
+.wishes h2 em {
+    color: var(--nude);
+}
+
+.wish-list {
+    max-width: 650px;
+    margin: 60px auto;
+    text-align: left;
+}
+
+.wish-list p {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255,255,255,.15);
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.final-message {
+    border: 1px solid rgba(185,154,105,.4);
+    max-width: 700px;
+    margin: 100px auto 0;
+    padding: 65px 20px;
+}
+
+.final-message h2 {
+    margin: 25px 0;
+}
+
+.final-message > p:not(.eyebrow) {
+    font-size: 12px;
+    line-height: 2;
+    color: rgba(255,255,255,.7);
+}
+
+.final-message h3 {
+    margin-top: 35px;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #210911;
+    color: rgba(255,255,255,.5);
+    text-align: center;
+    padding: 25px;
+    font-size: 9px;
+    letter-spacing: 3px;
+}
+
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 700px) {
+    header {
+        height: auto;
+        min-height: 75px;
+        padding: 20px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 10px;
+    }
+
+    .hero {
+        min-height: 80vh;
+    }
+
+    .hero-footer {
+        left: 20px;
+        right: 20px;
+        font-size: 7px;
+    }
+
+    .introduction,
+    .letter-section,
+    .memories,
+    .wishes {
+        padding: 80px 23px;
+    }
+
+    .letter {
+        padding: 85px 27px 110px;
+        margin: 70px 12px 55px;
+    }
+
+    .fountain-pen-image {
+        width: 165px;
+        top: -40px;
+        right: 5px;
+    }
+
+    
+.letter::after {
+    width: 50px;
+    height: 50px;
+    right: 18px;
+    bottom: 20px;
+    font-size: 24px;
+}
+
+
+    .letter p {
+        font-size: 21px;
+        line-height: 1.6;
+    }
+
+    .memory-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+
+    .memory-card {
+        margin-bottom: 20px;
+    }
+}
+
+/* MEMORIES - VINTAGE SCRAPBOOK */
+
+.memory-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    margin-top: 55px;
+    align-items: start;
+}
+
+.memory-card {
+    background: #f8f0e6;
+    padding: 14px 14px 25px;
+    border: 1px solid rgba(185, 154, 105, 0.4);
+    box-shadow: 0 12px 25px rgba(44, 13, 23, 0.12);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.memory-card:nth-child(1) {
+    transform: rotate(-3deg);
+}
+
+.memory-card:nth-child(2) {
+    transform: rotate(2deg);
+    margin-top: 35px;
+}
+
+.memory-card:nth-child(3) {
+    transform: rotate(-2deg);
+}
+
+.memory-card:hover {
+    transform: translateY(-8px) rotate(0deg);
+    box-shadow: 0 18px 35px rgba(44, 13, 23, 0.18);
+}
+
+.photo-frame {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    background: #e5d5c5;
+    border: 5px solid #fffaf3;
+    box-shadow: 0 3px 8px rgba(44, 13, 23, 0.12);
+}
+
+.photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+}
+
+/* Give the first portrait photo a better crop */
+.memory-card:nth-child(1) .photo-frame img {
+    object-position: center 75%;
+}
+
+
+.memory-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--burgundy);
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.memory-card p {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--text);
+    font-size: 13px;
+    line-height: 1.7;
+    text-align: center;
+    margin-top: 8px;
+}
+
+/* MOBILE MEMORIES */
+
+@media (max-width: 768px) {
+    .memory-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        max-width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .memory-card:nth-child(1),
+    .memory-card:nth-child(2),
+    .memory-card:nth-child(3) {
+        margin-top: 0;
+    }
+
+    .photo-frame {
+        height: 320px;
+    }
+}
+
+/* LITTLE SCRAPBOOK DETAILS */
+
+.memory-card {
+    position: relative;
+}
+
+/* Handwritten labels */
+.memory-tag {
+    display: block;
+    font-family: 'Caveat', cursive;
+    font-size: 19px;
+    color: #8a6252;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+/* Decorative washi tape */
+.memory-card::before {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 23px;
+    background: rgba(185, 154, 105, 0.35);
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-4deg);
+    z-index: 2;
+}
+
+/* Tiny gold detail */
+.memory-card::after {
+    content: "✦";
+    position: absolute;
+    bottom: 8px;
+    right: 13px;
+    color: var(--gold);
+    font-size: 13px;
+}
+
+/* A little breathing room */
+.memory-intro {
+    margin-bottom: 15px;
+}
+
+/* MEMORIES SECTION FINISHING TOUCHES */
+
+.memories {
+    position: relative;
+    background:
+        radial-gradient(
+            ellipse at 10% 15%,
+            rgba(185, 154, 105, 0.10),
+            transparent 40%
+        ),
+        linear-gradient(
+            135deg,
+            #f5eee5,
+            #eee3d7,
+            #f7f0e7
+        );
+    overflow: hidden;
+}
+
+/* Subtle decorative top and bottom borders */
+.memories::before,
+.memories::after {
+    content: "";
+    display: block;
+    width: 75px;
+    height: 1px;
+    background: var(--gold);
+    margin: 0 auto 35px;
+    opacity: 0.7;
+}
+
+.memories::after {
+    margin: 45px auto 0;
+}
+
+/* Closing message */
+.memory-ending {
+    text-align: center;
+    margin-top: 75px;
+    padding: 20px 15px;
+}
+
+.memory-flourish {
+    display: block;
+    color: var(--gold);
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.memory-ending p {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-style: italic;
+    color: var(--burgundy);
+}
+
+.memory-small-note {
+    display: block;
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    color: #8a6252;
+    margin-top: 10px;
+}
+
+/* YOUR NEXT CHAPTER */
+
+.wishes {
+    position: relative;
+    background:
+        radial-gradient(
+            ellipse at 90% 10%,
+            rgba(185, 154, 105, 0.12),
+            transparent 45%
+        ),
+        linear-gradient(145deg, #f7f0e7, #eee3d7);
+    overflow: hidden;
+}
+
+.wishes-intro {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: #806b60;
+    text-align: center;
+    margin: 20px auto 45px;
+    line-height: 1.8;
+}
+
+/* Individual wishes */
+
+.wish-list {
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.wish-item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 24px 28px;
+    background: rgba(255, 250, 243, 0.75);
+    border: 1px solid rgba(185, 154, 105, 0.3);
+    box-shadow: 0 6px 18px rgba(44, 13, 23, 0.05);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.wish-item:hover {
+    transform: translateX(7px);
+    box-shadow: 0 10px 22px rgba(44, 13, 23, 0.1);
+}
+
+.wish-item span {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-style: italic;
+    color: var(--gold);
+    min-width: 35px;
+}
+
+.wish-item p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--text);
+}
+
+/* FINAL BIRTHDAY MESSAGE */
+
+.final-message {
+    max-width: 850px;
+    margin: 100px auto 0;
+    padding: 75px 30px;
+    text-align: center;
+    background: var(--dark-wine);
+    color: var(--cream);
+    position: relative;
+    box-shadow: 0 20px 45px rgba(44, 13, 23, 0.18);
+}
+
+.final-flourish {
+    display: block;
+    color: var(--gold);
+    font-size: 23px;
+    margin-bottom: 28px;
+}
+
+.final-message .eyebrow {
+    color: var(--nude);
+    letter-spacing: 3px;
+    font-size: 10px;
+}
+
+.final-message h2 {
+    color: var(--cream);
+    margin: 25px 0;
+}
+
+.final-message h2 em {
+    color: var(--nude);
+}
+
+.final-message > p:not(.eyebrow) {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.9;
+    color: #e3d3c7;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.final-message h3 {
+    font-family: 'Caveat', cursive;
+    font-size: 28px;
+    color: var(--gold);
+    margin-top: 35px;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+    .wish-item {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .wish-item p {
+        font-size: 13px;
+    }
+
+    .final-message {
+        margin-top: 65px;
+        padding: 60px 20px;
+    }
+}
+
+/* FIX: YOUR NEXT CHAPTER HEADING */
+
+.wishes {
+    isolation: isolate;
+}
+
+.wishes > .eyebrow,
+.wishes > h2,
+.wishes > .wishes-intro {
+    position: relative;
+    z-index: 2;
+}
+
+.wishes > h2 {
+    color: #4b1725;
+}
+
+.wishes > h2 em {
+    color: #8a6252;
+}
+
+/* MOBILE LETTER REFINEMENT */
+
+@media (max-width: 700px) {
+
+    .letter {
+        width: 100%;
+        max-width: 100%;
+        margin: 75px auto 55px;
+        padding: 85px 25px 100px;
+    }
+
+    .letter-date {
+        font-size: 8px;
+        letter-spacing: 1.5px;
+        line-height: 1.8;
+    }
+
+    .letter h3 {
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+    .letter p {
+        font-size: 14px;
+        line-height: 2;
+    }
+
+    .fountain-pen-image {
+        width: 135px;
+        top: -38px;
+        right: 0;
+    }
+
+    .letter::after {
+        width: 48px;
+        height: 48px;
+        right: 18px;
+        bottom: 18px;
+    }
+
+    .voice-section {
+        width: 100%;
+        padding: 22px 16px;
+    }
+
+    .voice-section audio {
+        width: 100%;
+    }
+}
+
+
+/* =================================
+   MOBILE RESPONSIVENESS REFINEMENT
+================================= */
+
+@media (max-width: 700px) {
+
+    /* HEADER */
+    header {
+        padding: 18px 16px;
+        gap: 18px;
+    }
+
+    .logo {
+        font-size: 13px;
+    }
+
+    .logo span {
+        font-size: 8px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    nav a {
+        font-size: 10px;
+        white-space: nowrap;
+    }
+
+    /* HERO */
+    .hero {
+        min-height: 85vh;
+        padding: 100px 22px 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: clamp(42px, 11vw, 60px);
+        line-height: 1.15;
+    }
+
+    .hero-text {
+        max-width: 330px;
+        font-size: 13px;
+        line-height: 1.9;
+        margin: 20px auto;
+    }
+
+    .hero-footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        font-size: 7px;
+    }
+
+    .hero-footer span {
+        letter-spacing: 1px;
+    }
+
+    /* SECTION HEADINGS */
+    .introduction h2,
+    .letter-section > h2,
+    .memories > h2,
+    .wishes > h2 {
+        font-size: clamp(30px, 8vw, 40px);
+        line-height: 1.3;
+    }
+
+}
+@media (max-width: 700px) {
+    .memory-grid {
+        grid-template-columns: 1fr;
+        max-width: 380px;
+        gap: 35px;
+        margin: 40px auto 0;
+    }
+
+    .memory-card {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .memory-card:nth-child(2) {
+        margin-top: 0;
+    }
+
+    .photo-frame {
+        height: 300px;
+    }
+
+    .memory-card h3 {
+        font-size: 20px;
+    }
+
+    .memory-card p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .memory-ending {
+        margin-top: 45px;
+        text-align: center;
+    }
+}
+@media (max-width: 700px) {
+    .wishes {
+        padding: 80px 22px;
+    }
+
+    .wishes-intro {
+        max-width: 320px;
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .wish-list {
+        width: 100%;
+        gap: 14px;
+        margin-top: 35px;
+    }
+
+    .wish-item {
+        padding: 18px 15px;
+        gap: 15px;
+    }
+
+    .wish-item span {
+        font-size: 12px;
+        flex-shrink: 0;
+    }
+
+    .wish-item p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .final-message {
+        padding: 55px 22px;
+        margin-top: 65px;
+    }
+
+    .final-message h2 {
+        font-size: clamp(30px, 8vw, 40px);
+        line-height: 1.35;
+    }
+
+    .final-message > p:not(.eyebrow) {
+        font-size: 13px;
+        line-height: 1.9;
+    }
+
+    .final-message h3 {
+        font-size: 18px;
+    }
+}
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 22px 16px;
+        gap: 18px;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 18px;
+    }
+
+    nav a {
+        font-size: 10px;
+        white-space: nowrap;
+    }
+}
+
+/* SCROLL REVEAL ANIMATION */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Respect visitors who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+/* STAGGERED MEMORY CARD ANIMATION */
+
+.memory-card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.memories.revealed .memory-card {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.memories.revealed .memory-card:nth-child(1) {
+    transition-delay: 0.2s;
+}
+
+.memories.revealed .memory-card:nth-child(2) {
+    transition-delay: 0.4s;
+}
+
+.memories.revealed .memory-card:nth-child(3) {
+    transition-delay: 0.6s;
+}
+/* RESTORE MEMORY CARD HOVER EFFECT */
+
+.memories.revealed .memory-card:hover {
+    transform: translateY(-8px) rotate(0deg);
+    box-shadow: 0 18px 35px rgba(44, 13, 23, 0.18);
+}
+/* STAGGERED BIRTHDAY WISHES ANIMATION */
+
+.wish-item {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.wishes.revealed .wish-item {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.wishes.revealed .wish-item:nth-child(1) {
+    transition-delay: 0.2s;
+}
+
+.wishes.revealed .wish-item:nth-child(2) {
+    transition-delay: 0.4s;
+}
+
+.wishes.revealed .wish-item:nth-child(3) {
+    transition-delay: 0.6s;
+}
+
+.wishes.revealed .wish-item:nth-child(4) {
+    transition-delay: 0.8s;
+}
+/* RESTORE BIRTHDAY WISHES HOVER EFFECT */
+
+.wishes.revealed .wish-item:hover {
+    transform: translateX(8px);
+    box-shadow: 0 12px 25px rgba(44, 13, 23, 0.15);
+}
+/* =================================
+   ENVELOPE OPENING SCREEN
+================================= */
+
+.envelope-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    min-height: 100vh;
+    background: radial-gradient(circle at center, #f7f0e7, #e5d3c2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+    overflow: hidden;
+}
+
+.envelope-eyebrow {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #8a6252;
+    margin-bottom: 25px;
+}
+
+.envelope-screen h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(35px, 6vw, 55px);
+    line-height: 1.2;
+    color: #4b1725;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.envelope-intro {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    color: #70534b;
+    max-width: 310px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.envelope-wrapper {
+    width: 300px;
+    height: 195px;
+    perspective: 1000px;
+    margin: 15px 0 35px;
+}
+
+.envelope {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #4b1725;
+    box-shadow: 0 20px 40px rgba(44, 13, 23, 0.2);
+}
+
+.envelope-back {
+    position: absolute;
+    inset: 0;
+    background: #5a2030;
+}
+
+.envelope-letter {
+    position: absolute;
+    width: 85%;
+    height: 85%;
+    background: #fffaf1;
+    top: 5%;
+    left: 7.5%;
+    padding: 25px 10px;
+    color: #4b1725;
+    font-family: 'Playfair Display', serif;
+}
+
+.envelope-letter span {
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.envelope-letter p {
+    font-size: 15px;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+.envelope-front {
+    position: absolute;
+    inset: 0;
+    background: #6a283a;
+    clip-path: polygon(0 0, 50% 60%, 100% 0, 100% 100%, 0 100%);
+}
+
+.envelope-flap {
+    position: absolute;
+    inset: 0;
+    background: #783449;
+    clip-path: polygon(0 0, 100% 0, 50% 65%);
+    transform-origin: top;
+    z-index: 3;
+}
+
+.wax-seal {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #a97b43, #76502c);
+    color: #f7e7c7;
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.open-envelope-btn {
+    border: 1px solid #4b1725;
+    background: #4b1725;
+    color: #f7f0e7;
+    padding: 16px 30px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.open-envelope-btn:hover {
+    background: transparent;
+    color: #4b1725;
+    transform: translateY(-3px);
+}
+
+.envelope-footer {
+    position: absolute;
+    bottom: 25px;
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #8a6252;
+}
+
+@media (max-width: 500px) {
+    .envelope-wrapper {
+        width: 270px;
+        height: 175px;
+    }
+
+    .envelope-screen h1 {
+        font-size: 38px;
+    }
+}
+/* ENVELOPE OPENING ANIMATION */
+
+.envelope {
+    perspective: 1000px;
+}
+
+.envelope-flap {
+    backface-visibility: hidden;
+    transform-origin: top center;
+    transition: transform 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.envelope-letter {
+    z-index: 2;
+    transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.45s;
+}
+
+.wax-seal {
+    transition: opacity 0.35s ease, transform 0.45s ease;
+}
+
+.envelope-screen.opening .wax-seal {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.3) rotate(25deg);
+}
+
+.envelope-screen.opening .envelope-flap {
+    transform: rotateX(180deg);
+}
+
+.envelope-screen.opening .envelope-letter {
+    z-index: 6;
+    transform: translateY(-175px);
+}
+
+.envelope-screen.closed {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.9s ease, visibility 0.9s ease;
+}
+/* ENVELOPE LAYERING FIX */
+
+.envelope {
+    isolation: isolate;
+    overflow: visible;
+}
+
+.envelope-back {
+    z-index: 1;
+}
+
+.envelope-letter {
+    position: absolute;
+    width: 84%;
+    height: 150px;
+    left: 8%;
+    top: auto;
+    bottom: 0;
+    padding: 18px 10px;
+    z-index: 2;
+    transform: translateY(0);
+    transition: transform 1s ease 0.3s;
+}
+
+.envelope-letter span {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+
+.envelope-letter p {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.envelope-front {
+    z-index: 3;
+}
+
+.envelope-flap {
+    z-index: 4;
+    transform-origin: top center;
+    transition: transform 0.8s ease;
+}
+
+.wax-seal {
+    z-index: 5;
+}
+
+/* OPENING SEQUENCE */
+
+.envelope-screen.opening .envelope-flap {
+    transform: rotateX(180deg);
+}
+
+.envelope-screen.opening .envelope-letter {
+    z-index: 6;
+    transform: translateY(-175px);
+}
+
+.envelope-screen.opening .wax-seal {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+}
+/* BACKGROUND MUSIC CONTROL */
+
+.music-toggle {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #b99a69;
+    border-radius: 50%;
+    background: #4b1725;
+    color: #f7f0e7;
+    font-size: 21px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 5px 15px rgba(44, 13, 23, 0.2);
+    transition: all 0.3s ease;
+}
+
+.music-toggle:hover {
+    background: #b99a69;
+    color: #2c0d17;
+    transform: scale(1.08);
+}
+
+@media (max-width: 500px) {
+    .music-toggle {
+        bottom: 18px;
+        right: 18px;
+        width: 44px;
+        height: 44px;
+    }
+}
+
+/* =================================
+   THE RECIPE OF US
+================================= */
+
+.recipe-section {
+    padding: 110px 8%;
+    text-align: center;
+    background: #f7f0e7;
+}
+
+.recipe-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(38px, 5vw, 55px);
+    font-weight: 400;
+    color: #4b1725;
+    margin: 20px 0;
+}
+
+.recipe-section h2 em {
+    color: #9a6b55;
+    font-weight: 400;
+}
+
+.recipe-intro {
+    max-width: 380px;
+    margin: 0 auto 30px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.9;
+    color: #70534b;
+}
+
+.recipe-start-btn {
+    padding: 16px 30px;
+    background: #4b1725;
+    color: #f7f0e7;
+    border: 1px solid #4b1725;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.recipe-start-btn:hover {
+    background: transparent;
+    color: #4b1725;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+    .recipe-section {
+        padding: 80px 7%;
+    }
+
+    .recipe-section h2 {
+        font-size: 38px;
+    }
+}
+
+/* RECIPE CHALLENGE */
+
+.recipe-challenge {
+    display: none;
+    max-width: 520px;
+    margin: 50px auto 0;
+    padding: 40px 30px;
+    background: #fffaf1;
+    border: 1px solid #d9c2b0;
+    box-shadow: 0 15px 35px rgba(44, 13, 23, 0.08);
+    animation: recipeAppear 0.7s ease;
+}
+
+.recipe-challenge.active {
+    display: block;
+}
+
+.recipe-challenge h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: #4b1725;
+    margin: 15px 0;
+}
+
+.recipe-challenge > p:not(.eyebrow):not(.recipe-feedback) {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    line-height: 1.9;
+    color: #70534b;
+}
+
+.recipe-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.recipe-option {
+    padding: 15px;
+    background: transparent;
+    border: 1px solid #d9c2b0;
+    color: #4b1725;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.recipe-option:hover {
+    background: #4b1725;
+    color: #f7f0e7;
+    border-color: #4b1725;
+}
+
+.recipe-feedback {
+    margin-top: 20px;
+    color: #8a6252;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 16px;
+}
+
+@keyframes recipeAppear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .recipe-challenge {
+        padding: 30px 20px;
+    }
+}
+
+/* SECOND RECIPE CHALLENGE */
+
+.recipe-second-challenge {
+    display: none;
+    max-width: 520px;
+    margin: 30px auto 0;
+    padding: 40px 30px;
+    background: #fffaf1;
+    border: 1px solid #d9c2b0;
+    box-shadow: 0 15px 35px rgba(44, 13, 23, 0.08);
+    animation: recipeAppear 0.7s ease;
+}
+
+.recipe-second-challenge.active {
+    display: block;
+}
+
+.recipe-second-challenge h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: #4b1725;
+    margin: 15px 0;
+}
+
+.recipe-second-challenge > p:not(.eyebrow):not(.recipe-second-feedback) {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    line-height: 1.9;
+    color: #70534b;
+}
+
+.recipe-second-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.recipe-second-option {
+    padding: 15px;
+    background: transparent;
+    border: 1px solid #d9c2b0;
+    color: #4b1725;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.recipe-second-option:hover {
+    background: #4b1725;
+    color: #f7f0e7;
+    border-color: #4b1725;
+}
+
+.recipe-second-feedback {
+    margin-top: 20px;
+    color: #8a6252;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+    .recipe-second-challenge {
+        padding: 30px 20px;
+    }
+}
+
+/* FINAL RECIPE CARD */
+
+.final-recipe-card {
+    display: none;
+    max-width: 520px;
+    margin: 35px auto 0;
+    padding: 55px 40px;
+    background:
+        linear-gradient(rgba(255, 250, 241, 0.94), rgba(255, 250, 241, 0.94)),
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 31px,
+            rgba(185, 154, 105, 0.15) 32px
+        );
+    border: 1px solid #b99a69;
+    outline: 1px solid #b99a69;
+    outline-offset: -8px;
+    box-shadow: 0 20px 45px rgba(44, 13, 23, 0.12);
+    animation: recipeAppear 1s ease;
+}
+
+.final-recipe-card.active {
+    display: block;
+}
+
+.final-recipe-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #4b1725;
+    margin: 18px 0 8px;
+}
+
+.recipe-card-subtitle {
+    font-family: 'Caveat', cursive;
+    font-size: 21px;
+    color: #9a6b55;
+}
+
+.recipe-divider {
+    margin: 30px 0;
+    color: #b99a69;
+    letter-spacing: 5px;
+}
+
+.recipe-dedication {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    line-height: 2;
+    color: #4b1725;
+    font-style: italic;
+}
+
+.recipe-card-ending {
+    margin-top: 30px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    line-height: 1.8;
+    color: #70534b;
+}
+
+.recipe-signature {
+    display: block;
+    margin-top: 25px;
+    font-family: 'Caveat', cursive;
+    font-size: 26px;
+    color: #4b1725;
+}
+
+@media (max-width: 600px) {
+    .final-recipe-card {
+        padding: 45px 25px;
+    }
+
+    .final-recipe-card h3 {
+        font-size: 30px;
+    }
+
+    .recipe-dedication {
+        font-size: 16px;
+    }
+}
+
+/* THE MBAKARA EDITION */
+
+.mbakara-edition {
+    background: #f7f0e7;
+    color: #382729;
+    padding: 110px 8%;
+    text-align: center;
+}
+
+.mbakara-edition h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3rem, 7vw, 6rem);
+    line-height: 1.05;
+    letter-spacing: 3px;
+    margin: 25px 0;
+}
+
+.mbakara-edition h2 em {
+    color: #7a3547;
+    font-weight: 400;
+}
+
+.edition-intro {
+    max-width: 500px;
+    margin: 0 auto 55px;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.edition-hero {
+    max-width: 850px;
+    margin: 0 auto 55px;
+    position: relative;
+}
+
+.edition-hero img {
+    width: 100%;
+    max-height: 650px;
+    object-fit: cover;
+    display: block;
+}
+
+.edition-caption {
+    background: #4b1725;
+    color: #f7f0e7;
+    padding: 20px;
+    text-align: left;
+}
+
+.edition-caption span {
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.edition-caption h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    margin: 8px 0 0;
+}
+
+.edition-note {
+    font-family: 'Caveat', cursive;
+    font-size: 27px;
+    margin: 60px auto;
+    max-width: 500px;
+}
+
+.edition-gallery {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    align-items: start;
+}
+
+.edition-gallery img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    display: block;
+}
+
+.edition-ending {
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    color: #7a3547;
+    margin-top: 75px;
+}
+
+@media (max-width: 650px) {
+    .mbakara-edition {
+        padding: 75px 6%;
+    }
+
+    .edition-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .edition-gallery img {
+        height: 230px;
+    }
+
+    .edition-note {
+        font-size: 23px;
+    }
+}
+
+
+
+

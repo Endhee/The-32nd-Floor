@@ -1,0 +1,89 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 190">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#713342"/>
+      <stop offset=".25" stop-color="#35121f"/>
+      <stop offset=".55" stop-color="#180b12"/>
+      <stop offset=".82" stop-color="#481c2a"/>
+      <stop offset="1" stop-color="#170a10"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#76501f"/>
+      <stop offset=".3" stop-color="#f7df9e"/>
+      <stop offset=".55" stop-color="#c39447"/>
+      <stop offset=".8" stop-color="#fff0bc"/>
+      <stop offset="1" stop-color="#79501e"/>
+    </linearGradient>
+    <linearGradient id="nib" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff1c5"/>
+      <stop offset=".45" stop-color="#d4a34e"/>
+      <stop offset="1" stop-color="#8c5b22"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+  </defs>
+
+  <!-- Soft shadow -->
+  <ellipse cx="350" cy="145" rx="290" ry="13"
+           fill="#160b10" opacity=".25" filter="url(#shadow)"/>
+
+  <!-- Pen body -->
+  <path d="M130 65 Q135 48 155 48 L535 48
+           Q555 48 565 68 L565 105
+           Q555 125 535 125 L155 125
+           Q135 125 130 108 Z"
+        fill="url(#body)" stroke="#a87943" stroke-width="2"/>
+
+  <!-- Body highlight -->
+  <path d="M155 58 L520 58"
+        stroke="#c18a85" stroke-width="3" opacity=".45"
+        stroke-linecap="round"/>
+
+  <!-- Gold rings -->
+  <g fill="url(#gold)">
+    <rect x="170" y="47" width="10" height="80" rx="3"/>
+    <rect x="490" y="47" width="13" height="80" rx="3"/>
+    <rect x="520" y="48" width="5" height="77" rx="2"/>
+    <rect x="535" y="50" width="6" height="73" rx="2"/>
+  </g>
+
+  <!-- Nib collar -->
+  <path d="M130 65 L110 65 L110 108 L130 108 Z"
+        fill="url(#gold)" stroke="#805421" stroke-width="2"/>
+
+  <!-- Gold nib -->
+  <path d="M110 65 L35 85 L110 108 Z"
+        fill="url(#nib)" stroke="#8a602d" stroke-width="2"/>
+
+  <!-- Nib engraving -->
+  <path d="M106 85 L48 85"
+        stroke="#8b612f" stroke-width="1.5"/>
+  <path d="M105 85 L55 70"
+        stroke="#f8e1a5" stroke-width="1" opacity=".8"/>
+  <path d="M105 85 L55 100"
+        stroke="#f8e1a5" stroke-width="1" opacity=".8"/>
+
+  <!-- Nib breather hole -->
+  <circle cx="91" cy="85" r="4" fill="#70451e"/>
+
+  <!-- Gold cap -->
+  <path d="M565 53 Q590 53 600 70 L600 103
+           Q590 120 565 120 Z"
+        fill="url(#gold)" stroke="#8d632e" stroke-width="2"/>
+
+  <!-- Clip -->
+  <path d="M565 59 Q590 54 585 82 L575 93"
+        fill="none" stroke="url(#gold)" stroke-width="6"
+        stroke-linecap="round"/>
+
+  <!-- Cap tip -->
+  <path d="M600 70 Q622 85 600 103"
+        fill="#a87839" stroke="#f2d79c" stroke-width="2"/>
+
+  <!-- Gold emblem -->
+  <circle cx="455" cy="86" r="9" fill="url(#gold)"/>
+  <path d="M451 86 Q455 77 459 86 Q455 95 451 86"
+        fill="#572537"/>
+</svg>
